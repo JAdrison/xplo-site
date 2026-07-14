@@ -1,19 +1,11 @@
-# Site XPLO 2026
+# Site XPLO
 
-Protótipo funcional one-page da XPLO Lab Creator.
+Site oficial da XPLO Lab Creator, publicado em `www.xplo.com.br`.
 
-## Como visualizar
+## Posicionamento
 
-Abra `index.html` no navegador ou execute um servidor local nesta pasta.
+Operação de Reservas Diretas para Hospedagens: presença digital, geração de demanda, atendimento, CRM, inteligência artificial e mensuração conectados até a reserva.
 
-## Direção adotada
+## Conversão
 
-- posicionamento de agência, sem promessas financeiras exageradas;
-- identidade pós-branding com preto, branco, rosa, roxo e azul;
-- serviços apresentados como sistema integrado;
-- XPLO Lab posicionada como tecnologia própria de apoio à operação;
-- CTA direto para o WhatsApp já usado no site atual.
-
-## Antes de publicar
-
-Validar nomes da equipe, cases autorizados, formulário/CRM e dados legais do rodapé.
+O formulário de diagnóstico organiza as informações do lead e conclui o envio pelo WhatsApp oficial da XPLO, sem depender de servidor próprio.
