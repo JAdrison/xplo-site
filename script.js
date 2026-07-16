@@ -87,31 +87,46 @@ if (requestedJourney && journeyPanels.some((panel) => panel.id === requestedJour
   activateJourney(requestedJourney);
 }
 
-const labMotion = document.querySelector('[data-lab-motion]');
-if (labMotion) {
-  const loadLabMotion = () => {
-    if (labMotion.dataset.loaded === 'true') return;
-    labMotion.querySelectorAll('source[data-src]').forEach((source) => {
-      source.src = source.dataset.src;
-      source.removeAttribute('data-src');
+const labTour = document.querySelector('[data-lab-tour]');
+if (labTour) {
+  const tabs = [...labTour.querySelectorAll('[data-lab-target]')];
+  const screens = [...labTour.querySelectorAll('.lab-screen')];
+  let activeIndex = 0;
+  let rotation;
+
+  const activateLabScreen = (index) => {
+    activeIndex = (index + tabs.length) % tabs.length;
+    tabs.forEach((tab, tabIndex) => {
+      const active = tabIndex === activeIndex;
+      tab.classList.toggle('active', active);
+      tab.setAttribute('aria-selected', String(active));
     });
-    labMotion.dataset.loaded = 'true';
-    labMotion.load();
+    screens.forEach((screen, screenIndex) => {
+      const active = screenIndex === activeIndex;
+      screen.hidden = !active;
+      screen.classList.toggle('active', active);
+    });
   };
 
-  if (!('IntersectionObserver' in window)) {
-    loadLabMotion();
-  } else {
-    const motionObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        loadLabMotion();
-        if (!reduceMotion) labMotion.play().catch(() => {});
-        motionObserver.disconnect();
-      });
-    }, { rootMargin: '400px 0px', threshold: 0.01 });
-    motionObserver.observe(labMotion);
-  }
+  const startRotation = () => {
+    if (reduceMotion || rotation) return;
+    rotation = window.setInterval(() => activateLabScreen(activeIndex + 1), 4500);
+  };
+
+  const stopRotation = () => {
+    window.clearInterval(rotation);
+    rotation = undefined;
+  };
+
+  tabs.forEach((tab, index) => tab.addEventListener('click', () => {
+    stopRotation();
+    activateLabScreen(index);
+  }));
+
+  if ('IntersectionObserver' in window) {
+    const labObserver = new IntersectionObserver(([entry]) => entry.isIntersecting ? startRotation() : stopRotation(), { threshold: .25 });
+    labObserver.observe(labTour);
+  } else startRotation();
 }
 
 const phoneInput = document.querySelector('input[name="whatsapp"]');

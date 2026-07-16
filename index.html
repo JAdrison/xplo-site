@@ -257,11 +257,20 @@
           <p>Você vê o que entrou, o que avançou e o que precisa de ação.</p>
         </div>
         <div class="lab-pills reveal"><span>Atendimento centralizado</span><span>Pipeline comercial</span><span>IA treinada</span><span>Métricas da operação</span></div>
-        <div class="lab-motion reveal">
-          <video data-lab-motion autoplay muted loop playsinline preload="none" poster="assets/xplo-lab/relatorios.webp" aria-label="Demonstração das funcionalidades do XPLO LAB">
-            <source data-src="assets/xplo-lab/xplo-lab-showcase.mp4" type="video/mp4">
-          </video>
-          <div class="motion-status"><span></span> demonstração com telas reais</div>
+        <div class="lab-tour reveal" data-lab-tour>
+          <div class="lab-tour-nav" role="tablist" aria-label="Funcionalidades do XPLO LAB">
+            <button class="lab-tour-tab active" type="button" role="tab" aria-selected="true" aria-controls="lab-conversas" data-lab-target="lab-conversas"><small>01</small><strong>Conversas</strong><span>WhatsApp centralizado</span></button>
+            <button class="lab-tour-tab" type="button" role="tab" aria-selected="false" aria-controls="lab-pipeline" data-lab-target="lab-pipeline"><small>02</small><strong>Pipeline</strong><span>Oportunidades organizadas</span></button>
+            <button class="lab-tour-tab" type="button" role="tab" aria-selected="false" aria-controls="lab-relatorios" data-lab-target="lab-relatorios"><small>03</small><strong>Relatórios</strong><span>Dados para decidir</span></button>
+            <button class="lab-tour-tab" type="button" role="tab" aria-selected="false" aria-controls="lab-agente" data-lab-target="lab-agente"><small>04</small><strong>Agente IA</strong><span>Atendimento treinado</span></button>
+          </div>
+          <div class="lab-tour-stage">
+            <figure class="lab-screen active" id="lab-conversas" role="tabpanel"><img src="assets/xplo-lab/conversas-seguras.webp" alt="Caixa de entrada do XPLO LAB com conversas do WhatsApp centralizadas" loading="lazy"></figure>
+            <figure class="lab-screen" id="lab-pipeline" role="tabpanel" hidden><img src="assets/xplo-lab/pipeline-seguro.webp" alt="Pipeline comercial do XPLO LAB com oportunidades organizadas por etapa" loading="lazy"></figure>
+            <figure class="lab-screen" id="lab-relatorios" role="tabpanel" hidden><img src="assets/xplo-lab/relatorios.webp" alt="Relatório do XPLO LAB com indicadores da operação comercial" loading="lazy"></figure>
+            <figure class="lab-screen" id="lab-agente" role="tabpanel" hidden><img src="assets/xplo-lab/agente-ia-seguro.webp" alt="Configuração do agente de inteligência artificial do XPLO LAB" loading="lazy"></figure>
+            <div class="motion-status"><span></span> telas reais do XPLO LAB</div>
+          </div>
         </div>
       </div>
     </section>
