@@ -10,7 +10,7 @@
   <meta property="og:description" content="O Velho Chico já tinha estrutura, conforto e experiências. A XPLO ajudou essa história a alcançar mais pessoas e gerar demanda." />
   <meta property="og:url" content="https://www.xplo.com.br/cases/velho-chico/" />
   <meta property="og:image" content="https://www.xplo.com.br/cases/velho-chico/assets/velho-chico-case.webp" />
-  <meta name="xplo-release" content="velho-chico-case-2026-07-16-v3" />
+  <meta name="xplo-release" content="velho-chico-case-2026-07-16-v4" />
   <title>Case Pousada Velho Chico — XPLO</title>
   <script>document.documentElement.classList.add('motion-ready')</script>
   <style>
@@ -247,6 +247,9 @@
     }
     .story-turn span { color: #8f7a61; font-size: 10px; font-weight: 760; letter-spacing: .16em; text-transform: uppercase; }
     .story-turn p { margin: -7px 0 0; max-width: 840px; font-size: clamp(25px, 3.1vw, 42px); line-height: 1.08; letter-spacing: -.045em; font-weight: 680; }
+    .problem-transition { padding: clamp(62px, 7vw, 96px) 0; background: #d7d7d2; border-top: 1px solid rgba(9,9,8,.1); border-bottom: 1px solid rgba(9,9,8,.1); }
+    .problem-transition .story-turn { align-items: center; margin-top: 0; padding-top: 0; border-top: 0; }
+    .problem-transition .story-turn p { margin: 0; max-width: 900px; font-size: clamp(30px, 3.7vw, 52px); }
 
     .split-intro { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(50px, 9vw, 140px); align-items: start; }
     .problem-list { border-top: 1px solid var(--line-light); }
@@ -620,6 +623,9 @@
       .story-feature figcaption { inset: auto 8px 8px; padding: 12px; }
       .story-feature figcaption strong { font-size: 15px; }
       .story-turn { gap: 20px; margin-top: 38px; }
+      .problem-transition { padding: 64px 0; }
+      .problem-transition .story-turn { gap: 24px; margin-top: 0; }
+      .problem-transition .story-turn p { font-size: clamp(30px, 9.2vw, 42px); }
       .distribution-total strong { font-size: clamp(58px, 18vw, 76px); }
       .transition-band { padding: 64px 0; }
       .result-hero { grid-template-columns: 1fr; gap: 30px; }
@@ -755,10 +761,13 @@
           </figure>
         </div>
 
-        <div class="story-turn" data-reveal>
-          <span>O começo do problema</span>
-          <p>O Velho Chico tinha produto. Faltava transformar tudo isso em uma história clara, visual e recorrente — capaz de alcançar mais pessoas.</p>
-        </div>
+      </div>
+    </section>
+
+    <section class="section problem-transition" aria-label="Transição para o desafio">
+      <div class="shell story-turn" data-reveal>
+        <span>O começo do problema</span>
+        <p>O Velho Chico tinha produto. Faltava transformar tudo isso em uma história clara, visual e recorrente — capaz de alcançar mais pessoas.</p>
       </div>
     </section>
 
