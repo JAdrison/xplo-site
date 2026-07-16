@@ -10,7 +10,7 @@
   <meta property="og:description" content="O Velho Chico já tinha estrutura, conforto e experiências. A XPLO ajudou essa história a alcançar mais pessoas e gerar demanda." />
   <meta property="og:url" content="https://www.xplo.com.br/cases/velho-chico/" />
   <meta property="og:image" content="https://www.xplo.com.br/cases/velho-chico/assets/velho-chico-case.webp" />
-  <meta name="xplo-release" content="velho-chico-case-2026-07-16-v4" />
+  <meta name="xplo-release" content="velho-chico-case-2026-07-16-v5" />
   <title>Case Pousada Velho Chico — XPLO</title>
   <script>document.documentElement.classList.add('motion-ready')</script>
   <style>
@@ -186,6 +186,12 @@
     }
     .hero-client-logo img { width: 154px; height: 48px; object-fit: contain; }
     .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 38px; }
+    .client-strip { border-top: 1px solid rgba(9,9,8,.12); border-bottom: 1px solid rgba(9,9,8,.12); }
+    .client-strip-inner { min-height: 145px; display: grid; grid-template-columns: .8fr 1.2fr 1fr; align-items: center; gap: 34px; }
+    .client-strip p { margin: 0; font-size: 11px; font-weight: 760; letter-spacing: .17em; text-transform: uppercase; }
+    .client-logo { width: 210px; height: 70px; object-fit: contain; object-position: left center; }
+    .case-meta { display: flex; justify-content: flex-end; gap: 34px; color: #62594e; font-size: 12px; }
+    .case-meta strong { display: block; margin-top: 4px; color: var(--ink); font-size: 15px; }
     .button {
       display: inline-flex;
       align-items: center;
@@ -579,6 +585,8 @@
       .hero-photo { inset-left: 28%; opacity: .56; }
       .hero-copy { width: 100%; }
       .hero-copy { max-width: 720px; }
+      .client-strip-inner { grid-template-columns: 1fr 1fr; padding: 26px 0; }
+      .case-meta { grid-column: 1 / -1; justify-content: flex-start; }
       .story-opening-head, .story-turn, .split-intro, .distribution-head, .channel-grid, .commercial-chapter-head, .next-stage, .result-hero, .revenue-head { grid-template-columns: 1fr; }
       .distribution-total { margin-top: 8px; }
       .story-showcase { grid-template-columns: 1fr 1fr; grid-template-rows: 500px 330px; grid-auto-rows: 330px; }
@@ -614,9 +622,10 @@
       .hero-photo { inset: 0; opacity: .42; background-position: 58% center; }
       .hero::after { background: linear-gradient(90deg, rgba(9,9,8,.96), rgba(9,9,8,.55)); }
       .hero-inner { padding: 116px 0 54px; }
-      .hero-client { align-items: flex-start; flex-direction: column; gap: 14px; margin-bottom: 24px; }
-      .hero-client-logo { width: 168px; height: 56px; }
-      .hero-client-logo img { width: 138px; height: 42px; }
+      .hero-client { margin-bottom: 24px; }
+      .client-strip-inner { grid-template-columns: 1fr; }
+      .client-logo { width: 190px; justify-self: start; }
+      .case-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
       .story-opening { padding-top: 86px; }
       .story-showcase { grid-template-columns: 1fr 1fr; grid-template-rows: 430px 300px; grid-auto-rows: 300px; gap: 8px; }
       .story-feature.main { grid-column: 1 / -1; }
@@ -717,7 +726,6 @@
         <div class="hero-copy" data-reveal>
           <div class="hero-client">
             <span class="hero-client-label">Case real · Hotelaria</span>
-            <span class="hero-client-logo"><img src="assets/velho-chico-logo-horizontal.png" alt="Pousada Velho Chico · Icaraizinho de Amontada" /></span>
           </div>
           <h1 class="display">A experiência já estava lá. Faltava fazê-la chegar <em>mais longe.</em></h1>
           <p class="lead">Como a XPLO ajudou o Velho Chico a transformar estrutura, conforto e experiências de Icaraizinho em uma mensagem capaz de despertar desejo e gerar demanda.</p>
@@ -725,6 +733,18 @@
             <a class="button button-light" href="#historia">Conhecer o Velho Chico <span>↓</span></a>
             <a class="button button-ghost" href="#desafio">Entender o desafio</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="client-strip sand" aria-label="Informações da Pousada Velho Chico">
+      <div class="shell client-strip-inner">
+        <p>Operação acelerada<br />pela XPLO</p>
+        <img class="client-logo" src="assets/velho-chico-logo-horizontal.png" alt="Pousada Velho Chico · Icaraizinho de Amontada" />
+        <div class="case-meta">
+          <div>Segmento<strong>Pousada boutique</strong></div>
+          <div>Local<strong>Icaraizinho · CE</strong></div>
+          <div>Início<strong>Abril · 2026</strong></div>
         </div>
       </div>
     </section>
