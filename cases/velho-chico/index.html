@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Case XPLO e Pousada Velho Chico: experiência, influenciadores, mídia paga, Google, atendimento e CRM conectados para gerar reservas diretas." />
+  <link rel="canonical" href="https://www.xplo.com.br/cases/velho-chico/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Case Pousada Velho Chico — XPLO" />
+  <meta property="og:description" content="Como a XPLO conectou experiência, mídia e operação comercial para ampliar as reservas diretas do Velho Chico." />
+  <meta property="og:url" content="https://www.xplo.com.br/cases/velho-chico/" />
+  <meta property="og:image" content="https://www.xplo.com.br/cases/velho-chico/assets/velho-chico-case.webp" />
+  <title>Case Pousada Velho Chico — XPLO</title>
+  <style>
+    :root {
+      --ink: #090908;
+      --ink-2: #14120f;
+      --cream: #f1eadc;
+      --sand: #d1b995;
+      --sand-2: #af8f67;
+      --white: #fffdf8;
+      --muted: #9d968b;
+      --line-dark: rgba(255,255,255,.14);
+      --line-light: rgba(18,15,11,.16);
+      --success: #b8d7a6;
+      --max: 1220px;
+      --pad: clamp(22px, 5vw, 70px);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+      text-rendering: optimizeLegibility;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    ::selection { color: var(--ink); background: var(--sand); }
+
+    .shell { width: min(var(--max), calc(100% - (var(--pad) * 2))); margin: 0 auto; }
+    .dark { color: var(--white); background: var(--ink); }
+    .cream { color: var(--ink); background: var(--cream); }
+    .sand { color: var(--ink); background: var(--sand); }
+    .section { padding: clamp(86px, 11vw, 150px) 0; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 24px;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 760;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--sand-2);
+      box-shadow: 0 0 0 7px rgba(175,143,103,.16);
+    }
+    .dark .eyebrow { color: #dfd2bd; }
+    .muted { color: var(--muted); }
+    .display {
+      margin: 0;
+      font-size: clamp(49px, 7.4vw, 106px);
+      line-height: .9;
+      letter-spacing: -.075em;
+      font-weight: 760;
+    }
+    .section-title {
+      margin: 0;
+      max-width: 960px;
+      font-size: clamp(40px, 6vw, 82px);
+      line-height: .96;
+      letter-spacing: -.065em;
+      font-weight: 740;
+    }
+    .lead {
+      margin: 30px 0 0;
+      max-width: 760px;
+      font-size: clamp(19px, 2vw, 26px);
+      line-height: 1.42;
+      letter-spacing: -.025em;
+    }
+    .dark .lead { color: #c8c1b8; }
+
+    .internal-pill {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 50;
+      padding: 10px 14px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      color: rgba(255,255,255,.72);
+      background: rgba(9,9,8,.78);
+      backdrop-filter: blur(12px);
+      font-size: 10px;
+      font-weight: 760;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    header {
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 20;
+      height: 82px;
+      color: var(--white);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .nav { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { text-decoration: none; }
+    .brand strong { display: block; font-size: 25px; line-height: .9; letter-spacing: .2em; }
+    .brand span { display: block; margin-top: 6px; font-size: 8px; letter-spacing: .38em; color: #aaa49d; }
+    .nav-links { display: flex; align-items: center; gap: 28px; font-size: 13px; }
+    .nav-links a { text-decoration: none; color: #d8d3cb; }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta {
+      padding: 12px 18px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 999px;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      overflow: hidden;
+      color: var(--white);
+      background: var(--ink);
+    }
+    .hero-photo {
+      position: absolute;
+      inset: 0 0 0 44%;
+      background:
+        linear-gradient(90deg, var(--ink) 0%, rgba(9,9,8,.85) 16%, rgba(9,9,8,.23) 54%, rgba(9,9,8,.28) 100%),
+        linear-gradient(0deg, rgba(9,9,8,.75), transparent 60%),
+        url("assets/velho-chico-case.webp") center 46% / cover no-repeat;
+      filter: saturate(.82) contrast(1.03);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at 76% 40%, transparent 0 16%, rgba(9,9,8,.2) 48%, rgba(9,9,8,.7) 100%);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      align-content: center;
+      min-height: 100svh;
+      padding: 140px 0 78px;
+    }
+    .hero-copy { width: min(770px, 68%); }
+    .hero .display em { color: var(--sand); font-style: normal; }
+    .hero .lead { max-width: 650px; color: #c9c2b8; }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 38px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+      min-height: 56px;
+      padding: 0 24px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 760;
+      transition: transform .2s ease, background .2s ease, color .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-light { color: var(--ink); background: var(--white); }
+    .button-ghost { color: var(--white); border-color: rgba(255,255,255,.28); }
+    .button-dark { color: var(--white); background: var(--ink); }
+    .hero-foot {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      width: min(780px, 74%);
+      margin-top: 64px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line-dark);
+    }
+    .mini-stat + .mini-stat { padding-left: 24px; border-left: 1px solid var(--line-dark); }
+    .mini-stat strong { display: block; font-size: clamp(24px, 3vw, 35px); letter-spacing: -.05em; }
+    .mini-stat span { display: block; margin-top: 4px; color: #9e9992; font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
+
+    .client-strip { border-top: 1px solid rgba(9,9,8,.12); border-bottom: 1px solid rgba(9,9,8,.12); }
+    .client-strip-inner { min-height: 145px; display: grid; grid-template-columns: .8fr 1.2fr 1fr; align-items: center; gap: 34px; }
+    .client-strip p { margin: 0; font-size: 11px; font-weight: 760; letter-spacing: .17em; text-transform: uppercase; }
+    .client-logo { height: 70px; width: 180px; object-fit: contain; object-position: center; filter: sepia(.35) saturate(.75) contrast(.85); }
+    .case-meta { display: flex; justify-content: flex-end; gap: 34px; color: #62594e; font-size: 12px; }
+    .case-meta strong { display: block; margin-top: 4px; color: var(--ink); font-size: 15px; }
+
+    .split-intro { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(50px, 9vw, 140px); align-items: start; }
+    .problem-list { border-top: 1px solid var(--line-light); }
+    .problem-item {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 16px;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+    .problem-item .num { color: #8f7a61; font-size: 12px; font-weight: 760; letter-spacing: .14em; }
+    .problem-item h3 { margin: -4px 0 8px; font-size: 25px; letter-spacing: -.04em; }
+    .problem-item p { margin: 0; color: #615b53; font-size: 15px; }
+
+    .quote-block {
+      position: relative;
+      overflow: hidden;
+      min-height: 510px;
+      display: grid;
+      align-items: end;
+      border-radius: 4px;
+      background: #272019 url("assets/pousada-01.jpg") center / cover no-repeat;
+    }
+    .quote-block::before { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(9,9,8,.92), rgba(9,9,8,.02) 72%); }
+    .quote { position: relative; z-index: 1; margin: 0; padding: clamp(28px, 5vw, 54px); color: var(--white); font-size: clamp(30px, 4.4vw, 58px); line-height: 1.02; letter-spacing: -.055em; font-weight: 680; }
+    .quote small { display: block; margin-top: 24px; color: #c9c0b5; font-size: 11px; line-height: 1.4; letter-spacing: .15em; text-transform: uppercase; }
+
+    .steps { margin-top: 80px; border-top: 1px solid var(--line-dark); }
+    .step {
+      display: grid;
+      grid-template-columns: 90px minmax(180px, .75fr) minmax(280px, 1.25fr);
+      gap: 30px;
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line-dark);
+    }
+    .step-num { color: var(--sand); font-size: 12px; font-weight: 760; letter-spacing: .18em; }
+    .step h3 { margin: -6px 0 0; font-size: clamp(25px, 3vw, 40px); line-height: 1; letter-spacing: -.045em; }
+    .step p { margin: 0; color: #aaa49c; font-size: 16px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .tag { padding: 7px 10px; border: 1px solid rgba(255,255,255,.17); border-radius: 999px; color: #cfc8be; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; }
+
+    .result-hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 50px; align-items: end; }
+    .big-result { margin: 0; font-size: clamp(100px, 19vw, 250px); line-height: .72; letter-spacing: -.1em; font-weight: 780; }
+    .big-result span { font-size: .38em; vertical-align: top; }
+    .result-caption { max-width: 460px; }
+    .result-caption h3 { margin: 0 0 14px; font-size: clamp(28px, 4vw, 48px); line-height: 1; letter-spacing: -.05em; }
+    .result-caption p { margin: 0; color: #5c554d; font-size: 17px; }
+    .result-caption small { display: block; margin-top: 15px; color: #80776d; font-size: 11px; }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 90px;
+      border-top: 1px solid var(--line-light);
+      border-left: 1px solid var(--line-light);
+    }
+    .metric { min-height: 230px; padding: 30px; border-right: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); }
+    .metric span { color: #756b60; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    .metric strong { display: block; margin-top: 28px; font-size: clamp(42px, 5.6vw, 72px); line-height: .9; letter-spacing: -.07em; }
+    .metric p { margin: 12px 0 0; color: #756b60; font-size: 13px; }
+
+    .efficiency { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(50px, 8vw, 120px); align-items: start; }
+    .chart { display: grid; gap: 30px; padding-top: 8px; }
+    .chart-row { display: grid; grid-template-columns: 110px 1fr 90px; gap: 18px; align-items: center; }
+    .chart-label { color: #c9c1b6; font-size: 12px; }
+    .chart-track { position: relative; height: 46px; background: rgba(255,255,255,.08); }
+    .chart-bar { height: 100%; width: var(--w); background: var(--sand); transform-origin: left; animation: grow 1s ease both; }
+    .chart-row:last-child .chart-bar { background: var(--success); }
+    .chart-value { font-size: 20px; font-weight: 760; letter-spacing: -.04em; }
+    .chart-note { margin: 28px 0 0 128px; color: #8e887f; font-size: 11px; }
+    .delta-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px; border: 1px solid var(--line-dark); }
+    .delta { padding: 25px; }
+    .delta + .delta { border-left: 1px solid var(--line-dark); }
+    .delta strong { display: block; color: var(--success); font-size: 37px; letter-spacing: -.06em; }
+    .delta span { display: block; margin-top: 7px; color: #aaa49c; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+
+    .visual-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; margin-top: 70px; }
+    .visual-card { position: relative; min-height: 560px; overflow: hidden; background: #bba17f; }
+    .visual-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2,.7,.2,1); }
+    .visual-card:hover img { transform: scale(1.035); }
+    .visual-card.small { min-height: 390px; }
+    .visual-card .caption { position: absolute; inset: auto 18px 18px; padding: 16px; color: var(--white); background: rgba(9,9,8,.72); backdrop-filter: blur(12px); }
+    .visual-card .caption strong { display: block; font-size: 18px; }
+    .visual-card .caption span { display: block; margin-top: 4px; color: #bbb3a8; font-size: 11px; }
+    .visual-stack { display: grid; gap: 16px; }
+
+    .story-intro { margin-top: clamp(90px, 11vw, 140px); }
+    .story-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 54px; }
+    .story-card { position: relative; min-width: 0; min-height: 520px; overflow: hidden; margin: 0; background: #2b241c; }
+    .story-card img { width: 100%; height: 100%; object-fit: cover; }
+    .story-card figcaption { position: absolute; inset: auto 12px 12px; padding: 14px; color: var(--white); background: rgba(9,9,8,.76); backdrop-filter: blur(12px); }
+    .story-card figcaption strong { display: block; font-size: 16px; }
+    .story-card figcaption span { display: block; margin-top: 4px; color: #bbb3a8; font-size: 10px; }
+
+    .evidence-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; margin-top: 70px; }
+    .evidence-card { position: relative; min-width: 0; min-height: 360px; overflow: hidden; margin: 0; border: 1px solid var(--line-dark); background: #151411; }
+    .evidence-card.full { grid-column: 1 / -1; }
+    .evidence-card.half { grid-column: span 6; min-height: 590px; }
+    .evidence-card.landscape { min-height: 0; aspect-ratio: 1.85 / 1; }
+    .evidence-card.table { min-height: 0; aspect-ratio: 3.05 / 1; }
+    .evidence-card img { width: 100%; height: 100%; object-fit: cover; }
+    .evidence-card.screen img { object-fit: contain; padding: 22px; background: #f3f2ee; }
+    .evidence-card.dark-screen img { object-fit: contain; padding: 14px; background: #10100f; }
+    .evidence-card figcaption { position: absolute; inset: auto 14px 14px; max-width: calc(100% - 28px); padding: 15px 16px; color: var(--white); background: rgba(9,9,8,.82); border: 1px solid rgba(255,255,255,.12); backdrop-filter: blur(12px); }
+    .evidence-card figcaption strong { display: block; font-size: 17px; }
+    .evidence-card figcaption span { display: block; margin-top: 4px; color: #bbb3a8; font-size: 10px; }
+    .evidence-trigger { width: 100%; min-width: 0; height: 100%; padding: 0; border: 0; color: inherit; background: transparent; cursor: zoom-in; text-align: left; }
+    .evidence-trigger:focus-visible { outline: 2px solid var(--sand); outline-offset: -3px; }
+    .evidence-note { margin: 22px 0 0; color: #8f8981; font-size: 11px; }
+
+    .commercial-proof { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(50px, 8vw, 110px); align-items: center; }
+    .commercial-list { margin-top: 38px; border-top: 1px solid var(--line-light); }
+    .commercial-item { display: grid; grid-template-columns: 34px 1fr; gap: 14px; padding: 21px 0; border-bottom: 1px solid var(--line-light); }
+    .commercial-item b { color: #8f7a61; }
+    .commercial-item strong { display: block; font-size: 20px; }
+    .commercial-item span { display: block; margin-top: 4px; color: #696158; font-size: 13px; }
+    .crm-shot { position: relative; overflow: hidden; margin: 0; border: 1px solid var(--line-light); background: #fff; box-shadow: 0 24px 70px rgba(9,9,8,.15); }
+    .crm-shot img { width: 100%; min-height: 450px; object-fit: cover; object-position: top; }
+    .privacy-note { position: absolute; right: 12px; bottom: 12px; padding: 9px 11px; color: var(--white); background: rgba(9,9,8,.82); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+
+    .slot-wrap { border: 1px solid var(--line-dark); }
+    .slot-head { display: grid; grid-template-columns: 1.15fr .85fr; gap: 50px; padding: clamp(30px, 5vw, 58px); border-bottom: 1px solid var(--line-dark); }
+    .slot-head p { align-self: end; margin: 0; color: #918b82; font-size: 13px; }
+    .slot-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .slot-card { min-height: 245px; padding: 28px; border-right: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); }
+    .slot-card:nth-child(3n) { border-right: 0; }
+    .slot-card:nth-last-child(-n+3) { border-bottom: 0; }
+    .slot-label { color: var(--sand); font-size: 9px; font-weight: 760; letter-spacing: .13em; text-transform: uppercase; }
+    .slot-card h3 { margin: 62px 0 10px; font-size: 27px; line-height: 1; letter-spacing: -.045em; }
+    .slot-card p { margin: 0; color: #918b82; font-size: 13px; }
+
+    dialog { width: min(1160px, calc(100vw - 32px)); max-height: calc(100vh - 32px); padding: 0; overflow: hidden; color: var(--white); background: var(--ink); border: 1px solid rgba(255,255,255,.2); box-shadow: 0 35px 110px rgba(0,0,0,.65); }
+    dialog::backdrop { background: rgba(0,0,0,.84); backdrop-filter: blur(8px); }
+    .modal-bar { min-height: 54px; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 10px 14px 10px 20px; border-bottom: 1px solid var(--line-dark); }
+    .modal-bar span { color: #c6c0b7; font-size: 11px; }
+    .modal-close { width: 34px; height: 34px; color: var(--white); background: transparent; border: 1px solid var(--line-dark); border-radius: 50%; cursor: pointer; }
+    .modal-media { max-height: calc(100vh - 104px); overflow: auto; padding: 16px; }
+    .modal-media img { width: 100%; max-height: calc(100vh - 138px); object-fit: contain; }
+
+    .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 70px; background: var(--line-light); border: 1px solid var(--line-light); }
+    .principle { min-height: 300px; padding: 34px; background: var(--cream); }
+    .principle span { color: #8f7a61; font-size: 11px; font-weight: 760; letter-spacing: .15em; }
+    .principle h3 { margin: 68px 0 12px; font-size: 28px; line-height: 1; letter-spacing: -.05em; }
+    .principle p { margin: 0; color: #696158; font-size: 14px; }
+
+    .next-stage { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(50px, 8vw, 120px); align-items: end; }
+    .route { border-top: 1px solid var(--line-dark); }
+    .route-item { display: grid; grid-template-columns: 34px 1fr; gap: 14px; padding: 24px 0; border-bottom: 1px solid var(--line-dark); }
+    .route-item b { color: var(--sand); }
+    .route-item strong { display: block; font-size: 19px; }
+    .route-item span { display: block; margin-top: 4px; color: #918b82; font-size: 13px; }
+
+    .cta { position: relative; overflow: hidden; color: var(--ink); background: var(--sand); }
+    .cta::before { content: "XPLO"; position: absolute; right: -3vw; bottom: -12vw; color: rgba(255,255,255,.16); font-size: 33vw; line-height: 1; letter-spacing: -.11em; font-weight: 800; }
+    .cta-inner { position: relative; z-index: 1; min-height: 720px; display: grid; align-content: center; }
+    .cta .section-title { max-width: 1000px; }
+    .cta .lead { max-width: 650px; color: #544737; }
+    .cta .button { margin-top: 38px; width: fit-content; }
+
+    footer { color: #9d968d; background: var(--ink); }
+    .footer-inner { min-height: 220px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    footer p { margin: 0; font-size: 11px; }
+    footer a { text-decoration: none; }
+    .footer-links { display: flex; gap: 26px; }
+
+    [data-reveal] { opacity: 1; transform: none; }
+    [data-reveal].visible { opacity: 1; transform: none; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    @media (max-width: 920px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero-photo { inset-left: 28%; opacity: .56; }
+      .hero-copy, .hero-foot { width: 100%; }
+      .hero-copy { max-width: 720px; }
+      .split-intro, .efficiency, .next-stage, .result-hero { grid-template-columns: 1fr; }
+      .client-strip-inner { grid-template-columns: 1fr 1fr; padding: 26px 0; }
+      .case-meta { grid-column: 1 / -1; justify-content: flex-start; }
+      .step { grid-template-columns: 52px 1fr; }
+      .step p, .step .tags { grid-column: 2; }
+      .metric-grid { grid-template-columns: 1fr 1fr; }
+      .visual-grid { grid-template-columns: 1fr; }
+      .story-grid { grid-template-columns: 1fr 1fr; }
+      .evidence-card.half { grid-column: 1 / -1; }
+      .commercial-proof, .slot-head { grid-template-columns: 1fr; }
+      .slot-grid { grid-template-columns: 1fr 1fr; }
+      .slot-card:nth-child(3n) { border-right: 1px solid var(--line-dark); }
+      .slot-card:nth-child(2n) { border-right: 0; }
+      .slot-card:nth-last-child(-n+3) { border-bottom: 1px solid var(--line-dark); }
+      .slot-card:nth-last-child(-n+2) { border-bottom: 0; }
+      .principles { grid-template-columns: 1fr; }
+      .delta-grid { grid-template-columns: 1fr; }
+      .delta + .delta { border-left: 0; border-top: 1px solid var(--line-dark); }
+    }
+
+    @media (max-width: 620px) {
+      :root { --pad: 20px; }
+      .display { font-size: clamp(47px, 15vw, 69px); }
+      .section-title { font-size: clamp(39px, 12vw, 58px); }
+      .nav-cta { padding: 10px 13px; font-size: 11px; }
+      .hero-photo { inset: 0; opacity: .42; background-position: 58% center; }
+      .hero::after { background: linear-gradient(90deg, rgba(9,9,8,.96), rgba(9,9,8,.55)); }
+      .hero-inner { padding-top: 120px; }
+      .hero-foot { grid-template-columns: 1fr 1fr; gap: 22px 0; }
+      .mini-stat:nth-child(3) { padding-left: 0; border-left: 0; }
+      .client-strip-inner { grid-template-columns: 1fr; }
+      .client-logo { justify-self: start; }
+      .case-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+      .metric-grid { grid-template-columns: 1fr; }
+      .metric { min-height: 180px; }
+      .chart-row { grid-template-columns: 74px 1fr 63px; gap: 10px; }
+      .chart-note { margin-left: 0; }
+      .visual-card { min-height: 430px; }
+      .story-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .story-card { min-height: 360px; }
+      .story-card figcaption { inset: auto 6px 6px; padding: 10px; }
+      .evidence-card, .evidence-card.full { min-height: 300px; }
+      .evidence-card.half { min-height: 440px; }
+      .evidence-card.landscape, .evidence-card.table { width: 100%; aspect-ratio: auto; }
+      .evidence-card.screen img { padding: 8px; }
+      .crm-shot img { min-height: 300px; }
+      .slot-grid { grid-template-columns: 1fr; }
+      .slot-card, .slot-card:nth-child(3n), .slot-card:nth-child(2n) { border-right: 0; }
+      .slot-card, .slot-card:nth-last-child(-n+2) { border-bottom: 1px solid var(--line-dark); }
+      .slot-card:last-child { border-bottom: 0; }
+      .footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; }
+      .footer-links { flex-wrap: wrap; }
+      .internal-pill { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      [data-reveal] { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell nav">
+      <a class="brand" href="#top" aria-label="XPLO — início">
+        <strong>XPLO</strong>
+        <span>LAB CREATOR</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação da página">
+        <a href="#desafio">O desafio</a>
+        <a href="#operacao">O que fizemos</a>
+        <a href="#resultados">Resultados</a>
+        <a class="nav-cta" href="#diagnostico">Quero vender mais diárias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Case real · Hotelaria</p>
+          <h1 class="display">Mais de <em>80%</em> das reservas pelo tráfego pago.</h1>
+          <p class="lead">Como a XPLO conectou anúncios focados em experiência, influenciadores, Meta Ads, Google, motor de reservas e atendimento por IA em uma operação completa de reservas diretas.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#resultados">Ver os resultados <span>↓</span></a>
+            <a class="button button-ghost" href="#operacao">Entender a operação</a>
+          </div>
+        </div>
+        <div class="hero-foot" aria-label="Resumo dos resultados" data-reveal>
+          <div class="mini-stat"><strong>5.521</strong><span>conversas em 90 dias</span></div>
+          <div class="mini-stat"><strong>R$ 1,96</strong><span>por conversa</span></div>
+          <div class="mini-stat"><strong>284 mil</strong><span>pessoas alcançadas</span></div>
+          <div class="mini-stat"><strong>14,8 mil</strong><span>cliques no link</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="client-strip sand" aria-label="Informações do case">
+      <div class="shell client-strip-inner">
+        <p>Operação acelerada<br />pela XPLO</p>
+        <img class="client-logo" src="assets/velho-chico-logo.png" alt="Logo da Pousada Velho Chico" />
+        <div class="case-meta">
+          <div>Segmento<strong>Pousada boutique</strong></div>
+          <div>Local<strong>Icaraizinho · CE</strong></div>
+          <div>Início<strong>Abril · 2026</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cream" id="desafio">
+      <div class="shell split-intro">
+        <div data-reveal>
+          <p class="eyebrow">O ponto de partida</p>
+          <h2 class="section-title">O problema não era só vender mais barato.</h2>
+          <p class="lead">A pousada tinha estrutura, reputação e material visual. O gargalo estava em transformar esses ativos em percepção de valor, procura e conversas comerciais.</p>
+        </div>
+        <div class="problem-list" data-reveal>
+          <article class="problem-item">
+            <span class="num">01</span>
+            <div><h3>Baixa ocupação</h3><p>A dor principal declarada no onboarding era operar abaixo do potencial, mesmo com um produto validado.</p></div>
+          </article>
+          <article class="problem-item">
+            <span class="num">02</span>
+            <div><h3>Baixa captação</h3><p>Instagram, WhatsApp e Booking existiam, mas sem um motor constante de demanda direta.</p></div>
+          </article>
+          <article class="problem-item">
+            <span class="num">03</span>
+            <div><h3>Valor pouco traduzido</h3><p>Reduzir preço não resolveu a ocupação. Era necessário vender experiência, não apenas diária.</p></div>
+          </article>
+          <article class="problem-item">
+            <span class="num">04</span>
+            <div><h3>Marketing sem visão do comercial</h3><p>Gerar contatos não bastava: atendimento, follow-up e mensuração também precisavam entrar na operação.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cream" style="padding-top:0">
+      <div class="shell quote-block" data-reveal>
+        <blockquote class="quote">“A pousada não precisava parecer mais barata. Precisava ser percebida como a experiência que já entregava.”<small>Diagnóstico estratégico · Operação XPLO</small></blockquote>
+      </div>
+    </section>
+
+    <section class="section dark" id="operacao">
+      <div class="shell">
+        <div data-reveal>
+          <p class="eyebrow">A operação XPLO</p>
+          <h2 class="section-title">Da experiência à reserva direta.</h2>
+          <p class="lead">O tráfego pago foi apenas uma camada. O resultado veio da integração entre posicionamento, influenciadores, Meta Ads, Google, motor de reservas, atendimento por IA e acompanhamento comercial.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step" data-reveal>
+            <span class="step-num">01</span>
+            <h3>Diagnóstico da operação</h3>
+            <div><p>Mapeamos produto, público, estrutura, preços, sazonalidade, canais, concorrentes e gargalos de captação.</p><div class="tags"><span class="tag">Onboarding</span><span class="tag">Concorrência</span><span class="tag">Sazonalidade</span></div></div>
+          </article>
+          <article class="step" data-reveal>
+            <span class="step-num">02</span>
+            <h3>Posicionamento e oferta</h3>
+            <div><p>A comunicação passou a destacar calmaria, gastronomia, piscina, rooftop, suítes especiais e experiências do litoral.</p><div class="tags"><span class="tag">Percepção de valor</span><span class="tag">Experiência</span><span class="tag">Reserva direta</span></div></div>
+          </article>
+          <article class="step" data-reveal>
+            <span class="step-num">03</span>
+            <h3>Anúncios focados na experiência</h3>
+            <div><p>Em vez de vender apenas preço e diária, os anúncios passaram a mostrar descanso, gastronomia, suítes, piscina, rooftop e experiências em Icaraizinho.</p><div class="tags"><span class="tag">Desejo</span><span class="tag">Experiência</span><span class="tag">Percepção de valor</span></div></div>
+          </article>
+          <article class="step" data-reveal>
+            <span class="step-num">04</span>
+            <h3>Influenciadores e vídeos reais</h3>
+            <div><p>Influenciadores passaram a viver e registrar a hospedagem, criando vídeos com presença humana, prova social e uma visão mais autêntica da experiência.</p><div class="tags"><span class="tag">Influenciadores</span><span class="tag">UGC</span><span class="tag">Vídeo</span></div></div>
+          </article>
+          <article class="step" data-reveal>
+            <span class="step-num">05</span>
+            <h3>Meta Ads para gerar procura</h3>
+            <div><p>Estruturamos ondas de campanha, ofertas sazonais e testes criativos para levar a experiência do Velho Chico a novos públicos e iniciar conversas.</p><div class="tags"><span class="tag">Instagram</span><span class="tag">WhatsApp</span><span class="tag">Datas prioritárias</span></div></div>
+          </article>
+          <article class="step" data-reveal>
+            <span class="step-num">06</span>
+            <h3>Presença completa no Google</h3>
+            <div><p>Google Ads, Perfil da Empresa e Google Hotels ampliaram a presença da pousada no momento em que o hóspede já estava pesquisando onde ficar.</p><div class="tags"><span class="tag">Google Ads</span><span class="tag">Google Business</span><span class="tag">Google Hotels</span></div></div>
+          </article>
+          <article class="step" data-reveal>
+            <span class="step-num">07</span>
+            <h3>Motor de reservas</h3>
+            <div><p>A jornada passou a conectar descoberta, disponibilidade e reserva direta, reduzindo atrito e criando um caminho próprio além das OTAs.</p><div class="tags"><span class="tag">Disponibilidade</span><span class="tag">Reserva direta</span><span class="tag">Canal próprio</span></div></div>
+          </article>
+          <article class="step" data-reveal>
+            <span class="step-num">08</span>
+            <h3>Atendimento por IA</h3>
+            <div><p>A IA entrou para apoiar o atendimento, responder com contexto, organizar oportunidades e manter o próximo passo até a reserva.</p><div class="tags"><span class="tag">IA</span><span class="tag">CRM</span><span class="tag">Follow-up</span></div></div>
+          </article>
+          <article class="step" data-reveal>
+            <span class="step-num">09</span>
+            <h3>Otimização contínua</h3>
+            <div><p>Campanhas, conteúdo, canais e atendimento passaram a ser analisados como uma única operação, reforçando o que gera ocupação e receita.</p><div class="tags"><span class="tag">Escala</span><span class="tag">Eficiência</span><span class="tag">Aprendizado</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cream" id="resultados">
+      <div class="shell">
+        <p class="eyebrow" data-reveal>Resultado que chega ao comercial</p>
+        <div class="result-hero" data-reveal>
+          <p class="big-result">80<span>%+</span></p>
+          <div class="result-caption">
+            <h3>das reservas passaram a vir do tráfego pago.</h3>
+            <p>O canal pago deixou de ser uma ação isolada e passou a sustentar a maior parte da demanda comercial informada pela operação.</p>
+            <small>Resultados variam conforme estrutura, oferta, sazonalidade, investimento e execução comercial.</small>
+          </div>
+        </div>
+
+        <div class="metric-grid" data-reveal>
+          <article class="metric"><span>Inícios de conversa</span><strong>5.521</strong><p>Atribuídos pelo Meta em 90 dias.</p></article>
+          <article class="metric"><span>Custo por conversa</span><strong>R$ 1,96</strong><p>Média no período analisado.</p></article>
+          <article class="metric"><span>Alcance</span><strong>284 mil</strong><p>Pessoas alcançadas pelas campanhas.</p></article>
+          <article class="metric"><span>Visualizações</span><strong>517 mil</strong><p>Visualizações de vídeo atribuídas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="shell efficiency">
+        <div data-reveal>
+          <p class="eyebrow">Eficiência em evolução</p>
+          <h2 class="section-title">Mais procura, com custo menor.</h2>
+          <p class="lead">A comparação entre junho e a primeira metade de julho mostra que o volume diário cresceu mais rápido que o investimento.</p>
+        </div>
+        <div data-reveal>
+          <div class="chart" aria-label="Comparação de conversas por dia">
+            <div class="chart-row"><span class="chart-label">Junho</span><div class="chart-track"><div class="chart-bar" style="--w:62%"></div></div><strong class="chart-value">79,8/dia</strong></div>
+            <div class="chart-row"><span class="chart-label">1–16 julho</span><div class="chart-track"><div class="chart-bar" style="--w:100%"></div></div><strong class="chart-value">128,6/dia</strong></div>
+          </div>
+          <p class="chart-note">Inícios de conversa atribuídos pelo Meta. Julho considera período parcial.</p>
+          <div class="delta-grid">
+            <div class="delta"><strong>+61,1%</strong><span>conversas por dia</span></div>
+            <div class="delta"><strong>−18,3%</strong><span>custo por conversa</span></div>
+            <div class="delta"><strong>+31,6%</strong><span>investimento por dia</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cream">
+      <div class="shell">
+        <div data-reveal>
+          <p class="eyebrow">Criativos que mostram valor</p>
+          <h2 class="section-title">O hóspede precisa desejar antes de perguntar o preço.</h2>
+          <p class="lead">A narrativa visual conectou estrutura, conforto, gastronomia e experiência regional — os elementos que sustentam uma reserva direta com maior percepção de valor.</p>
+        </div>
+        <div class="visual-grid">
+          <figure class="visual-card" data-reveal>
+            <img src="assets/pousada-01.jpg" alt="Piscina e estrutura da Pousada Velho Chico" />
+            <figcaption class="caption"><strong>Estrutura que gera desejo</strong><span>Piscina, conforto e atmosfera de descanso.</span></figcaption>
+          </figure>
+          <div class="visual-stack">
+            <figure class="visual-card small" data-reveal>
+              <img src="assets/velho-chico-case.webp" alt="Suíte com varanda e rede na Pousada Velho Chico" />
+              <figcaption class="caption"><strong>Acolhimento</strong><span>Mais do que diária: uma experiência de pausa.</span></figcaption>
+            </figure>
+            <figure class="visual-card small" data-reveal>
+              <img src="assets/pousada-02.jpg" alt="Prato servido no restaurante da Pousada Velho Chico" />
+              <figcaption class="caption"><strong>Gastronomia</strong><span>Um dos ativos que ampliam a percepção de valor.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="story-intro" data-reveal>
+          <p class="eyebrow">Influenciadores vivendo a experiência</p>
+          <h2 class="section-title">A experiência virou o próprio anúncio.</h2>
+          <p class="lead">Presença humana, demonstração real e conteúdo com linguagem de viagem transformaram cada ponto da hospedagem em motivo para desejar a estadia.</p>
+        </div>
+        <div class="story-grid">
+          <figure class="story-card" data-reveal>
+            <img loading="lazy" src="assets/evidencias/influenciadora-cafe-da-manha.webp" alt="Influenciadora mostrando o café da manhã da pousada" />
+            <figcaption><strong>Café da manhã</strong><span>Ritual e acolhimento</span></figcaption>
+          </figure>
+          <figure class="story-card" data-reveal>
+            <img loading="lazy" src="assets/evidencias/influenciadora-loft-hidromassagem.webp" alt="Influenciadora na hidromassagem do loft" />
+            <figcaption><strong>Loft e hidromassagem</strong><span>Conforto que diferencia</span></figcaption>
+          </figure>
+          <figure class="story-card" data-reveal>
+            <img loading="lazy" src="assets/evidencias/influenciadora-gastronomia.webp" alt="Influenciadora apresentando a gastronomia" />
+            <figcaption><strong>Gastronomia</strong><span>Desejo além da diária</span></figcaption>
+          </figure>
+          <figure class="story-card" data-reveal>
+            <img loading="lazy" src="assets/evidencias/influenciadora-passeio-manguezal.webp" alt="Influenciadora durante passeio de barco no manguezal" />
+            <figcaption><strong>Experiências regionais</strong><span>O destino como produto</span></figcaption>
+          </figure>
+        </div>
+        <p class="evidence-note">Conteúdo produzido para apresentar a experiência real da hospedagem e do destino.</p>
+      </div>
+    </section>
+
+    <section class="section dark" id="evidencias">
+      <div class="shell">
+        <div data-reveal>
+          <p class="eyebrow">Evidências da operação</p>
+          <h2 class="section-title">Resultados que aparecem nos rastros.</h2>
+          <p class="lead">Campanhas, conteúdo e presença social deixam sinais verificáveis. Clique nos prints para ampliar.</p>
+        </div>
+
+        <div class="evidence-grid">
+          <figure class="evidence-card full landscape screen" data-reveal>
+            <button class="evidence-trigger" type="button" data-image="assets/evidencias/meta-video-influencer-335-mil.webp" data-title="Desempenho do vídeo com influenciador">
+              <img loading="lazy" src="assets/evidencias/meta-video-influencer-335-mil.webp" alt="Painel de desempenho de vídeo com 335.045 reproduções" />
+              <figcaption><strong>335.045 reproduções em um criativo</strong><span>6 segundos de média e 34% de atenção inicial no recorte recebido.</span></figcaption>
+            </button>
+          </figure>
+          <figure class="evidence-card half" data-reveal>
+            <button class="evidence-trigger" type="button" data-image="assets/evidencias/reel-cafe-da-manha-154-mil.webp" data-title="Reel do café da manhã">
+              <img loading="lazy" src="assets/evidencias/reel-cafe-da-manha-154-mil.webp" alt="Reel do café da manhã com 154 mil visualizações" />
+              <figcaption><strong>154 mil visualizações</strong><span>Conteúdo do café da manhã.</span></figcaption>
+            </button>
+          </figure>
+          <figure class="evidence-card half" data-reveal>
+            <button class="evidence-trigger" type="button" data-image="assets/evidencias/reel-influenciadora-piscina-138-mil.webp" data-title="Reel de influenciadora na piscina">
+              <img loading="lazy" src="assets/evidencias/reel-influenciadora-piscina-138-mil.webp" alt="Reel de influenciadora na piscina com 138 mil visualizações" />
+              <figcaption><strong>138 mil visualizações</strong><span>Influência que demonstra a experiência.</span></figcaption>
+            </button>
+          </figure>
+          <figure class="evidence-card full landscape screen" data-reveal>
+            <button class="evidence-trigger" type="button" data-image="assets/evidencias/meta-recorte-1556-conversas.webp" data-title="Recorte de desempenho Meta">
+              <img loading="lazy" src="assets/evidencias/meta-recorte-1556-conversas.webp" alt="Painel Meta com 1.556 conversas, R$ 1,97 por conversa e R$ 3.065,30 investidos" />
+              <figcaption><strong>1.556 conversas em um recorte da conta</strong><span>R$ 1,97 por conversa e R$ 3.065,30 investidos; período não visível no print.</span></figcaption>
+            </button>
+          </figure>
+          <figure class="evidence-card full table screen" data-reveal>
+            <button class="evidence-trigger" type="button" data-image="assets/evidencias/meta-campanhas-conversas-custo.webp" data-title="Campanhas de conversa">
+              <img loading="lazy" src="assets/evidencias/meta-campanhas-conversas-custo.webp" alt="Tabela de campanhas com conversas, alcance, custo e investimento" />
+              <figcaption><strong>Campanhas acompanhadas por resultado e custo</strong><span>Recorte com campanhas, alcance, frequência, conversas e investimento.</span></figcaption>
+            </button>
+          </figure>
+          <figure class="evidence-card half dark-screen" data-reveal>
+            <button class="evidence-trigger" type="button" data-image="assets/evidencias/instagram-perfil-53-mil.webp" data-title="Perfil do Instagram">
+              <img loading="lazy" src="assets/evidencias/instagram-perfil-53-mil.webp" alt="Perfil do Instagram do Velho Chico com 53,1 mil seguidores" />
+              <figcaption><strong>53,1 mil seguidores</strong><span>Métrica visível no momento da captura.</span></figcaption>
+            </button>
+          </figure>
+          <figure class="evidence-card half" data-reveal>
+            <button class="evidence-trigger" type="button" data-image="assets/evidencias/instagram-influenciadora-prova-social.webp" data-title="Publicação de influenciadora">
+              <img loading="lazy" src="assets/evidencias/instagram-influenciadora-prova-social.webp" alt="Publicação pública de influenciadora sobre o Velho Chico" />
+              <figcaption><strong>Prova social com presença humana</strong><span>Publicação e engajamento visíveis na captura.</span></figcaption>
+            </button>
+          </figure>
+        </div>
+        <p class="evidence-note">Métricas sociais são dinâmicas. Recortes sem período identificado não são tratados como total geral da operação.</p>
+      </div>
+    </section>
+
+    <section class="section cream">
+      <div class="shell commercial-proof">
+        <div data-reveal>
+          <p class="eyebrow">Marketing conectado ao comercial</p>
+          <h2 class="section-title">A conversa precisa de próximo passo.</h2>
+          <p class="lead">O pipeline organiza o que acontece depois do clique e mantém cada oportunidade em movimento.</p>
+          <div class="commercial-list">
+            <div class="commercial-item"><b>01</b><div><strong>Novo lead</strong><span>Entrada e identificação da oportunidade.</span></div></div>
+            <div class="commercial-item"><b>02</b><div><strong>Apresentação e preço</strong><span>Contexto, proposta e alinhamento de intenção.</span></div></div>
+            <div class="commercial-item"><b>03</b><div><strong>Disponibilidade e recontato</strong><span>Continuidade até haver decisão ou nova janela.</span></div></div>
+          </div>
+        </div>
+        <figure class="crm-shot" data-reveal>
+          <img loading="lazy" src="assets/evidencias/crm-pipeline-redigido.webp" alt="Pipeline comercial com dados pessoais borrados" />
+          <figcaption class="privacy-note">Dados pessoais redigidos</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section cream" style="padding-top:0">
+      <div class="shell">
+        <p class="eyebrow" data-reveal>O que o case ensina</p>
+        <div class="principles">
+          <article class="principle" data-reveal><span>01 · VALOR</span><h3>Preço não corrige posicionamento.</h3><p>Quando a estrutura já existe, o trabalho é traduzir valor e criar desejo antes da conversa comercial.</p></article>
+          <article class="principle" data-reveal><span>02 · DEMANDA</span><h3>Campanha precisa de cadência.</h3><p>Datas, públicos, formatos e ofertas mudam. Uma operação viva aprende e distribui orçamento conforme a intenção.</p></article>
+          <article class="principle" data-reveal><span>03 · CONVERSÃO</span><h3>Lead não é reserva.</h3><p>O marketing abre a conversa. Atendimento, CRM, follow-up e mensuração transformam intenção em diária vendida.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="shell next-stage">
+        <div data-reveal>
+          <p class="eyebrow">Ecossistema de reservas</p>
+          <h2 class="section-title">Presença, demanda e atendimento no mesmo caminho.</h2>
+          <p class="lead">O Velho Chico deixou de depender de um único canal. A operação passou a acompanhar o hóspede desde a descoberta da experiência até a reserva direta.</p>
+        </div>
+        <div class="route" data-reveal>
+          <div class="route-item"><b>01</b><div><strong>Descoberta pela experiência</strong><span>Influenciadores, vídeos e anúncios que despertam desejo.</span></div></div>
+          <div class="route-item"><b>02</b><div><strong>Meta Ads e Google Ads</strong><span>Gerar demanda e capturar intenção ativa.</span></div></div>
+          <div class="route-item"><b>03</b><div><strong>Google Business e Hotels</strong><span>Reputação, localização, tarifa e disponibilidade na decisão.</span></div></div>
+          <div class="route-item"><b>04</b><div><strong>Motor de reservas</strong><span>Transformar interesse em consulta e reserva direta.</span></div></div>
+          <div class="route-item"><b>05</b><div><strong>Atendimento por IA</strong><span>Responder, orientar e manter cada oportunidade em movimento.</span></div></div>
+          <div class="route-item"><b>06</b><div><strong>CRM, follow-up e mensuração</strong><span>Conectar conversa, reserva, ocupação e faturamento.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="diagnostico">
+      <div class="shell cta-inner" data-reveal>
+        <p class="eyebrow">Diagnóstico da operação</p>
+        <h2 class="section-title">Descubra onde sua hospedagem perde reservas.</h2>
+        <p class="lead">A XPLO analisa presença, demanda, atendimento e mensuração para mostrar quais gargalos impedem sua operação de vender mais diárias diretamente.</p>
+        <a class="button button-dark" href="https://www.xplo.com.br/#diagnostico">Quero meu diagnóstico <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <a class="brand" href="#top" aria-label="Voltar ao topo"><strong>XPLO</strong><span>LAB CREATOR</span></a>
+      <p>Case Pousada Velho Chico · XPLO · 2026</p>
+      <div class="footer-links"><a href="https://www.xplo.com.br/">Site XPLO ↗</a><a href="#top">Voltar ao topo ↑</a></div>
+    </div>
+  </footer>
+
+  <dialog id="evidence-modal" aria-labelledby="modal-title">
+    <div class="modal-bar"><span id="modal-title">Evidência ampliada</span><button class="modal-close" type="button" aria-label="Fechar">×</button></div>
+    <div class="modal-media"><img id="modal-image" alt="Evidência ampliada" /></div>
+  </dialog>
+
+  <script>
+    const items = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -50px' });
+      items.forEach((item) => observer.observe(item));
+    } else {
+      items.forEach((item) => item.classList.add('visible'));
+    }
+
+    const modal = document.querySelector('#evidence-modal');
+    const modalImage = document.querySelector('#modal-image');
+    const modalTitle = document.querySelector('#modal-title');
+    const modalClose = document.querySelector('.modal-close');
+
+    document.querySelectorAll('.evidence-trigger').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        modalImage.src = trigger.dataset.image;
+        modalImage.alt = trigger.dataset.title;
+        modalTitle.textContent = trigger.dataset.title;
+        modal.showModal();
+      });
+    });
+
+    const closeModal = () => {
+      modal.close();
+      modalImage.removeAttribute('src');
+    };
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) closeModal();
+    });
+  </script>
+</body>
+</html>
