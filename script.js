@@ -140,24 +140,49 @@ phoneInput?.addEventListener('input', () => {
 const form = document.getElementById('lead-form');
 const formStatus = document.getElementById('form-status');
 
-form?.addEventListener('submit', (event) => {
+form?.addEventListener('submit', async (event) => {
   event.preventDefault();
   if (!form.reportValidity()) return;
 
   const data = new FormData(form);
+  const lead = {
+    name: String(data.get('nome') || '').trim(),
+    phone: String(data.get('whatsapp') || '').trim(),
+    lodging: String(data.get('hospedagem') || '').trim(),
+    bottleneck: String(data.get('gargalo') || '').trim(),
+    page: window.location.href
+  };
   const message = [
     'Olá! Quero receber o diagnóstico da operação de reservas da XPLO.',
     '',
-    `Nome: ${data.get('nome')}`,
-    `WhatsApp: ${data.get('whatsapp')}`,
-    `Hospedagem: ${data.get('hospedagem')}`,
-    `Principal gargalo: ${data.get('gargalo')}`
+    `Nome: ${lead.name}`,
+    `WhatsApp: ${lead.phone}`,
+    `Hospedagem: ${lead.lodging}`,
+    `Principal gargalo: ${lead.bottleneck}`
   ].join('\n');
 
-  formStatus.textContent = 'Tudo certo. Abrindo o WhatsApp…';
-  const url = `https://wa.me/5585997089348?text=${encodeURIComponent(message)}`;
-  const popup = window.open(url, '_blank', 'noopener,noreferrer');
-  if (!popup) window.location.href = url;
+  const submitButton = form.querySelector('button[type="submit"]');
+  if (submitButton) submitButton.disabled = true;
+  formStatus.textContent = 'Salvando seus dados…';
+
+  try {
+    const response = await fetch('https://n8n.xplolab.cloud/webhook/site-xplo-lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(lead)
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok || result.saved !== true) throw new Error('Falha ao salvar lead');
+
+    formStatus.textContent = 'Tudo certo. Abrindo o WhatsApp…';
+    const url = `https://wa.me/5585997089348?text=${encodeURIComponent(message)}`;
+    const popup = window.open(url, '_blank', 'noopener,noreferrer');
+    if (!popup) window.location.href = url;
+  } catch (_) {
+    formStatus.textContent = 'Não conseguimos salvar seus dados. Tente novamente em instantes.';
+  } finally {
+    if (submitButton) submitButton.disabled = false;
+  }
 });
 
 const year = document.getElementById('year');
