@@ -155,7 +155,7 @@ form?.addEventListener('submit', (event) => {
   ].join('\n');
 
   formStatus.textContent = 'Tudo certo. Abrindo o WhatsApp…';
-  const url = `https://wa.me/5585999899213?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/5585997089348?text=${encodeURIComponent(message)}`;
   const popup = window.open(url, '_blank', 'noopener,noreferrer');
   if (!popup) window.location.href = url;
 });
