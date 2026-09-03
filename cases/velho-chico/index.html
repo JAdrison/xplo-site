@@ -10,7 +10,7 @@
   <meta property="og:description" content="O Velho Chico já tinha estrutura, conforto e experiências. A XPLO ajudou essa história a alcançar mais pessoas e gerar demanda." />
   <meta property="og:url" content="https://www.xplo.com.br/cases/velho-chico/" />
   <meta property="og:image" content="https://www.xplo.com.br/cases/velho-chico/assets/velho-chico-case.webp" />
-  <meta name="xplo-release" content="velho-chico-case-2026-09-03-receitas-agosto-v1" />
+  <meta name="xplo-release" content="velho-chico-case-2026-09-03-investimento-alcance-v2" />
   <title>Case Pousada Velho Chico — XPLO</title>
   <script>document.documentElement.classList.add('motion-ready')</script>
   <style>
@@ -581,6 +581,49 @@
     .revenue-proof figcaption strong { display: block; font-size: 14px; }
     .revenue-proof figcaption span { display: block; margin-top: 5px; color: #aaa39a; font-size: 10px; line-height: 1.5; }
     .revenue-continuation-note { margin: 18px 0 0; color: #81786e; font-size: 10px; }
+    .paid-expansion {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(280px, .76fr) minmax(0, 1.24fr);
+      min-width: 0;
+      border-top: 1px solid var(--line-dark);
+      background: #151411;
+    }
+    .paid-expansion-copy { min-width: 0; padding: clamp(34px, 5vw, 66px); }
+    .paid-expansion .eyebrow { color: var(--sand); }
+    .paid-expansion h4 {
+      max-width: 540px;
+      margin: 0;
+      font-size: clamp(36px, 4.4vw, 62px);
+      line-height: .95;
+      letter-spacing: -.05em;
+    }
+    .paid-expansion .lead { max-width: 540px; color: #b8b1a8; font-size: 14px; }
+    .paid-metrics { display: grid; margin-top: 34px; border: 1px solid var(--line-dark); }
+    .paid-metric { min-width: 0; padding: 22px 24px; }
+    .paid-metric + .paid-metric { border-top: 1px solid var(--line-dark); }
+    .paid-metric span { color: #9f978d; font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
+    .paid-metric strong {
+      display: block;
+      margin-top: 14px;
+      color: var(--white);
+      font-size: clamp(35px, 3.4vw, 48px);
+      line-height: .9;
+      letter-spacing: -.055em;
+      white-space: nowrap;
+    }
+    .paid-expansion-proof {
+      align-self: center;
+      min-width: 0;
+      margin: clamp(28px, 3vw, 42px) clamp(28px, 3vw, 42px) clamp(28px, 3vw, 42px) 0;
+      background: #eef2f6;
+      border: 1px solid var(--line-dark);
+    }
+    .paid-expansion-proof .evidence-trigger { display: grid; grid-template-rows: auto auto; height: auto; }
+    .paid-expansion-proof img { display: block; width: 100%; height: auto; aspect-ratio: 2128 / 1250; object-fit: contain; background: #eef2f6; }
+    .paid-expansion-proof figcaption { padding: 18px 20px; color: var(--white); background: #141311; border-top: 1px solid var(--line-dark); }
+    .paid-expansion-proof figcaption strong { display: block; font-size: 14px; }
+    .paid-expansion-proof figcaption span { display: block; margin-top: 5px; color: #aaa39a; font-size: 10px; line-height: 1.5; }
 
     .cta { position: relative; overflow: hidden; color: var(--ink); background: var(--sand); }
     .cta::before { content: "XPLO"; position: absolute; right: -3vw; bottom: -12vw; color: rgba(255,255,255,.16); font-size: 33vw; line-height: 1; letter-spacing: -.11em; font-weight: 800; }
@@ -764,6 +807,8 @@
       .revenue-current strong { white-space: normal; }
       .revenue-proof { min-height: 0; border-left: 0; border-top: 1px solid var(--line-dark); }
       .revenue-proof img { aspect-ratio: 1.975 / 1; }
+      .paid-expansion { grid-template-columns: 1fr; }
+      .paid-expansion-proof { margin: 0; border-right: 0; border-bottom: 0; border-left: 0; }
       .slot-grid { grid-template-columns: 1fr; }
       .slot-card, .slot-card:nth-child(3n), .slot-card:nth-child(2n) { border-right: 0; }
       .slot-card, .slot-card:nth-last-child(-n+2) { border-bottom: 1px solid var(--line-dark); }
@@ -1351,8 +1396,25 @@
               <figcaption><strong>Receitas preservadas. Demais indicadores redigidos.</strong><span>Período visível no painel: 01/08/2026 a 03/09/2026 · captura fornecida pela operação.</span></figcaption>
             </button>
           </figure>
+          <div class="paid-expansion">
+            <div class="paid-expansion-copy">
+              <p class="eyebrow">Mais investimento · máquina montada</p>
+              <h4>Mais mídia. Mais de 1 milhão de contas alcançadas.</h4>
+              <p class="lead">Para sustentar esse novo patamar, a operação ampliou o investimento em tráfego pago para R$ 11.623,01. Com a máquina já montada — conteúdo, mídia, atendimento e CRM integrados — a distribuição alcançou 1.061.650 contas, e o faturamento também avançou no recorte financeiro próximo.</p>
+              <div class="paid-metrics" aria-label="Resultados de mídia paga no período">
+                <div class="paid-metric"><span>Investimento em Meta Ads</span><strong>R$ 11.623,01</strong></div>
+                <div class="paid-metric"><span>Alcance no período</span><strong>1.061.650</strong></div>
+              </div>
+            </div>
+            <figure class="paid-expansion-proof">
+              <button class="evidence-trigger" type="button" data-image="assets/evidencias/meta-ads-investimento-alcance-agosto-2026-redigido.webp" data-title="Investimento e alcance do Velho Chico no Meta Ads">
+                <img loading="lazy" src="assets/evidencias/meta-ads-investimento-alcance-agosto-2026-redigido.webp" alt="Painel do Meta Ads com R$ 11.623,01 em valor gasto e alcance de 1.061.650 contas; demais dados borrados" />
+                <figcaption><strong>Investimento e alcance preservados. Demais dados redigidos.</strong><span>Meta Ads · 01/08/2026 a 01/09/2026. O painel financeiro cobre 01/08/2026 a 03/09/2026; janelas próximas, não idênticas.</span></figcaption>
+              </button>
+            </figure>
+          </div>
         </div>
-        <p class="revenue-continuation-note">O novo recorte coincide com a alta temporada. A página apresenta a evolução observada sem atribuir o resultado a um único canal.</p>
+        <p class="revenue-continuation-note">O novo recorte coincide com a alta temporada. A página relaciona maior distribuição, operação comercial estruturada e avanço de receita sem atribuir todo o faturamento a um único canal.</p>
       </div>
     </section>
 
