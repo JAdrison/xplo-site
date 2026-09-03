@@ -10,7 +10,7 @@
   <meta property="og:description" content="O Velho Chico já tinha estrutura, conforto e experiências. A XPLO ajudou essa história a alcançar mais pessoas e gerar demanda." />
   <meta property="og:url" content="https://www.xplo.com.br/cases/velho-chico/" />
   <meta property="og:image" content="https://www.xplo.com.br/cases/velho-chico/assets/velho-chico-case.webp" />
-  <meta name="xplo-release" content="velho-chico-case-2026-08-11-testimonial-v1" />
+  <meta name="xplo-release" content="velho-chico-case-2026-09-03-receitas-agosto-v1" />
   <title>Case Pousada Velho Chico — XPLO</title>
   <script>document.documentElement.classList.add('motion-ready')</script>
   <style>
@@ -532,6 +532,55 @@
     .revenue-stat span { color: #8f7a61; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
     .revenue-stat strong { display: block; margin-top: 30px; font-size: clamp(34px, 4vw, 54px); line-height: .9; letter-spacing: -.06em; }
     .revenue-note { margin: 20px 0 0; color: #81786e; font-size: 10px; }
+    .revenue-continuation {
+      display: grid;
+      grid-template-columns: minmax(280px, .76fr) minmax(0, 1.24fr);
+      margin-top: clamp(48px, 6vw, 82px);
+      overflow: hidden;
+      color: var(--white);
+      background: var(--ink);
+      border: 1px solid var(--line-dark);
+    }
+    .revenue-continuation-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 58px;
+      padding: clamp(34px, 5vw, 66px);
+    }
+    .revenue-continuation .eyebrow { color: var(--sand); }
+    .revenue-continuation h3 {
+      max-width: 560px;
+      margin: 0;
+      font-size: clamp(42px, 5.4vw, 78px);
+      line-height: .93;
+      letter-spacing: -.055em;
+    }
+    .revenue-continuation .lead { max-width: 520px; color: #b8b1a8; font-size: 15px; }
+    .revenue-current { padding-top: 28px; border-top: 1px solid var(--line-dark); }
+    .revenue-current strong {
+      display: block;
+      color: var(--white);
+      font-size: clamp(50px, 6vw, 88px);
+      line-height: .84;
+      letter-spacing: -.065em;
+      white-space: nowrap;
+    }
+    .revenue-current span { display: block; margin-top: 20px; color: #9f978d; font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
+    .revenue-proof {
+      align-self: center;
+      min-width: 0;
+      min-height: 0;
+      margin: clamp(28px, 3vw, 42px) clamp(28px, 3vw, 42px) clamp(28px, 3vw, 42px) 0;
+      background: #eef2f6;
+      border: 1px solid var(--line-dark);
+    }
+    .revenue-proof .evidence-trigger { display: grid; grid-template-rows: auto auto; height: auto; }
+    .revenue-proof img { display: block; width: 100%; height: auto; min-height: 0; object-fit: contain; object-position: center; background: #eef2f6; }
+    .revenue-proof figcaption { padding: 18px 20px; color: var(--white); background: #141311; border-top: 1px solid var(--line-dark); }
+    .revenue-proof figcaption strong { display: block; font-size: 14px; }
+    .revenue-proof figcaption span { display: block; margin-top: 5px; color: #aaa39a; font-size: 10px; line-height: 1.5; }
+    .revenue-continuation-note { margin: 18px 0 0; color: #81786e; font-size: 10px; }
 
     .cta { position: relative; overflow: hidden; color: var(--ink); background: var(--sand); }
     .cta::before { content: "XPLO"; position: absolute; right: -3vw; bottom: -12vw; color: rgba(255,255,255,.16); font-size: 33vw; line-height: 1; letter-spacing: -.11em; font-weight: 800; }
@@ -686,9 +735,12 @@
       .evidence-card.half { min-height: 440px; }
       .evidence-card.landscape, .evidence-card.table { width: 100%; aspect-ratio: auto; }
       .evidence-card.screen img { padding: 8px; }
-      .commercial-intro-side { grid-template-columns: 1fr; }
+      .commercial-intro-side { grid-template-columns: 1fr; min-width: 0; width: 100%; }
+      .commercial-chapter-head > * { min-width: 0; }
+      .commercial-chapter-head .section-title { font-size: clamp(36px, 10.8vw, 46px); }
       .commercial-intro-side .lead { margin-top: 0; }
-      .ai-phone-wrap { max-width: 350px; justify-self: center; margin-top: 24px; }
+      .ai-phone-wrap { width: 100%; max-width: 100%; min-width: 0; justify-self: stretch; margin-top: 24px; }
+      .ai-phone { width: 100%; }
       .commercial-team { min-height: 0; }
       .commercial-team::after { display: none; }
       .commercial-team img { position: relative; display: block; aspect-ratio: 4 / 3; object-position: center; }
@@ -707,6 +759,11 @@
       .revenue-month { font-size: 7px; }
       .revenue-summary { grid-template-columns: 1fr; }
       .revenue-stat { min-height: 150px; }
+      .revenue-continuation { grid-template-columns: 1fr; }
+      .revenue-continuation-copy { gap: 42px; }
+      .revenue-current strong { white-space: normal; }
+      .revenue-proof { min-height: 0; border-left: 0; border-top: 1px solid var(--line-dark); }
+      .revenue-proof img { aspect-ratio: 1.975 / 1; }
       .slot-grid { grid-template-columns: 1fr; }
       .slot-card, .slot-card:nth-child(3n), .slot-card:nth-child(2n) { border-right: 0; }
       .slot-card, .slot-card:nth-last-child(-n+2) { border-bottom: 1px solid var(--line-dark); }
@@ -1275,6 +1332,27 @@
           </div>
           <p class="revenue-note">Valores aproximados e arredondados, informados pela operação do Velho Chico. Série apresentada em seis recortes mensais.</p>
         </div>
+
+        <div class="revenue-continuation" data-reveal>
+          <div class="revenue-continuation-copy">
+            <div>
+              <p class="eyebrow">A história continuou · Alta temporada</p>
+              <h3>Agosto levou a receita a um novo patamar.</h3>
+              <p class="lead">Depois de encerrar a série anterior em R$ 96 mil, o painel financeiro do Velho Chico passou a registrar R$ 198.729,00 em receitas no recorte fornecido pela operação.</p>
+            </div>
+            <div class="revenue-current">
+              <strong>R$ 198.729</strong>
+              <span>Receitas · agosto de 2026</span>
+            </div>
+          </div>
+          <figure class="revenue-proof">
+            <button class="evidence-trigger" type="button" data-image="assets/evidencias/financeiro-receitas-agosto-2026-redigido.webp" data-title="Receitas do Velho Chico na alta temporada">
+              <img loading="lazy" src="assets/evidencias/financeiro-receitas-agosto-2026-redigido.webp" alt="Painel financeiro do Velho Chico com R$ 198.729,00 em receitas e demais indicadores borrados" />
+              <figcaption><strong>Receitas preservadas. Demais indicadores redigidos.</strong><span>Período visível no painel: 01/08/2026 a 03/09/2026 · captura fornecida pela operação.</span></figcaption>
+            </button>
+          </figure>
+        </div>
+        <p class="revenue-continuation-note">O novo recorte coincide com a alta temporada. A página apresenta a evolução observada sem atribuir o resultado a um único canal.</p>
       </div>
     </section>
 
