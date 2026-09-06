@@ -24,4 +24,41 @@
 @media(max-width:980px){.method-film,.method-scale{grid-template-columns:1fr;gap:24px}.chapter-visual{aspect-ratio:3/4}.method-chapter{gap:28px}.case-feature{grid-template-columns:1fr 1.2fr}}
 @media(max-width:640px){.method-story{padding:64px 0}.method-intro h2{font-size:clamp(2.3rem,10vw,3rem);line-height:1.09}.method-intro>p:not(.section-label){font-size:16px;margin-top:22px}.method-route{grid-template-columns:1fr;gap:0;margin-top:30px}.method-route a{min-height:52px;padding:15px 0}.method-chapter{grid-template-columns:1fr;padding:36px 0;gap:22px}.method-chapter:nth-of-type(3) .chapter-visual,.method-chapter:nth-of-type(3) .chapter-copy{grid-column:auto;grid-row:auto}.chapter-copy h3,.method-film h3,.method-scale h3,.case-feature h3{font-size:clamp(1.8rem,8vw,2.35rem)}.chapter-visual{aspect-ratio:4/3;border-radius:18px}.chapter-visual figcaption{padding:20px;gap:8px}.chapter-visual figcaption strong{font-size:1.35rem}.method-scale{padding:26px 22px;border-radius:18px}.method-film{padding:36px 0;gap:12px}.method-close{font-size:17px}.case-feature{grid-template-columns:1fr}.case-feature>img{height:230px;min-height:0}}
 @media(max-width:640px){.case-evidence strong{font-size:clamp(1.8rem,8vw,2.4rem)}}
+/* Delivery promise and two-stage, 90-day timeline. */
+.hero h1{font-size:clamp(2.8rem,4.5vw,4.6rem);line-height:1.04;letter-spacing:-.055em}
+.hero h1 em{font-style:normal;color:#ead2ad}
+.hero-delivery{margin:18px 0 0;color:#ead2ad;font-size:14px;font-weight:600}
+.hero{height:auto;min-height:850px}
+.hero-content{min-height:850px;padding-top:140px;padding-bottom:90px}
+.delivery-phase{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #b6a68e;padding:0 0 18px;margin:48px 0 0;font-size:18px;font-weight:700}
+.delivery-phase span{font-size:14px;font-weight:400;color:#574b41}
+.delivery-timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:0;gap:0}
+.delivery-step{position:relative;min-width:0;padding:32px 28px 30px 0;border-top:2px solid #a38156}
+.delivery-step+.delivery-step{padding-left:28px}
+.delivery-step::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:#a38156}
+.delivery-step+.delivery-step::before{left:28px}
+.delivery-day{display:flex;align-items:baseline;gap:8px;color:#8b6035;margin-bottom:28px}
+.delivery-day strong{font:700 clamp(3rem,5vw,4.5rem)/1 "Manrope",sans-serif;letter-spacing:-.06em}
+.delivery-day span{font-size:16px}
+.delivery-step h3{font:700 1.45rem/1.2 "Manrope",sans-serif;letter-spacing:-.035em;margin:0 0 18px}
+.delivery-step p{font-size:16px;line-height:1.65;color:#574b41;margin:10px 0 0}
+.delivery-step .delivery-benefit{font-weight:600;color:#25211b}
+.delivery-milestone{background:#25211b;color:#fffdf9;padding:32px 28px!important;border-radius:0 0 18px 18px}
+.delivery-milestone .delivery-day{color:#ead2ad}
+.delivery-milestone .delivery-benefit{color:#fffdf9}
+.delivery-milestone p{color:#e3dace}
+.delivery-milestone::before{left:28px;background:#ead2ad}
+.delivery-badge{display:inline-block;margin:0 0 16px;padding:5px 10px;border:1px solid #7d6b51;border-radius:20px;color:#ead2ad;font-size:12px}
+@media(max-width:980px){.hero-copy{width:80%}.delivery-step{padding-right:18px}.delivery-step+.delivery-step{padding-left:18px}.delivery-step+.delivery-step::before{left:18px}}
+@media(max-width:640px){
+ .hero,.hero-content{min-height:0}.hero-content{padding-top:130px;padding-bottom:64px;align-items:center}
+ .hero-copy{width:100%}.hero h1{font-size:clamp(2.35rem,9.2vw,3.4rem);max-width:100%}
+ .hero-subtitle{font-size:16px;margin-top:22px}.hero-delivery{font-size:14px}
+ .delivery-phase{flex-direction:column;gap:8px;margin-top:32px}
+ .delivery-timeline{grid-template-columns:1fr;margin-left:6px}
+ .delivery-step,.delivery-step+.delivery-step{border-top:0;border-left:2px solid #a38156;padding:28px 18px 28px 26px}
+ .delivery-step::before,.delivery-step+.delivery-step::before{left:-7px;top:34px}
+ .delivery-day{margin-bottom:16px}.delivery-day strong{font-size:3rem}
+ .delivery-milestone{border-radius:0 16px 16px 0;padding:28px 24px!important}
+}
 
