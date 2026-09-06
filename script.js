@@ -153,7 +153,7 @@ form?.addEventListener('submit', async (event) => {
     page: window.location.href
   };
   const message = [
-    'Olá! Quero receber o diagnóstico da operação de reservas da XPLO.',
+    'Olá! Quero receber o plano inicial de 30 dias para a operação de reservas da XPLO.',
     '',
     `Nome: ${lead.name}`,
     `WhatsApp: ${lead.phone}`,
