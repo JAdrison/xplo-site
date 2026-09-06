@@ -1,5 +1,26 @@
-Get-Content: 
-Line |
-   2 |  Get-Content -Raw -LiteralPath .\method.css
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '.\method.css' because it does not exist.
+Warning: truncated output (original token count: 1370)
+Total output lines: 26
+
+/* Check-in Lotado: narrative method section and Velho Chico proof block. */
+.method-story{background:var(--paper)}
+.method-intro{max-width:850px}
+.method-intro h2{margin:0;font:700 clamp(2.8rem,5.3vw,4.7rem)/1.04 "Manrope",sans-serif;letter-spacing:-.055em;text-wrap:balance}
+.method-intro>p:not(.section-label){max-width:760px;margin:28px 0 0;color:#574b41;font-size:19px;line-height:1.7}
+.method-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;list-style:none;margin:48px 0 12px;padding:0}
+.method-route a{display:flex;gap:14px;align-items:center;height:100%;padding:20px 0;border-top:1px solid #b6a48a;font-size:15px;font-weight:700}
+.method-route span{color:#6d5435;font-size:12px}
+.method-chapter{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,72px);align-items:center;padding:64px 0;border-bottom:1px solid var(--line)}
+.method-chapter:nth-of-type(3) .chapter-visual{grid-column:1;grid-row:1}.method-chapter:nth-of-type(3) .chapter-copy{grid-column:2}
+.chapter-label{color:#755937;font-size:11px;font-weight:700;letter-spacing:.13em}
+.chapter-copy h3,.method-film h3,.method-scale h3,.case-feature h3{margin:18px 0 24px;font:700 clamp(1.9rem,3vw,2.9rem)/1.12 "Manrope",sans-serif;letter-spacing:-.04em;text-wrap:balance}
+.chapter-copy>p:not(.chapter-label),.chapter-copy li{color:#574b41;font-size:16px;line-height:1.7}
+.chapter-copy ul{padding-left:20px;margin:22px 0}.chapter-copy li+li{margin-top:10px}
+.chapter-outcome{margin-top:28px!important;padding:20px 22px;border-left:3px solid #a27f4b;background:#e7dccb;color:#30261d!important;border-radius:0 14px 14px 0}
+.chapter-visual{position:relative;margin:0;aspect-ratio:4/5;overflow:hidden;border-radius:24px;background:#30261d;box-shadow:0 18px 44px rgba(45,30,17,.12)}
+.chapter-visual img{width:100%;height:100%;object-fit:cover}.chapter-visual:after{content:"";position:absolute;inset:25% 0 0;background:linear-gradient(transparent,rgba(12,11,9,.94));pointer-events:none}
+.c…370 tokens truncated…size:20px;line-height:1.6;color:#574b41}.method-close strong{color:#241c14}
+.case-feature{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);overflow:hidden;background:#25211b;color:#fffdf9;border-radius:24px;margin:26px 0 30px}.case-feature>img{width:100%;height:100%;min-height:400px;object-fit:cover}.case-feature>div{padding:clamp(24px,4vw,48px)}.case-feature .section-label{color:#dfc59e;font-size:10px;line-height:1.6}.case-feature p:not(.section-label){font-size:15px;line-height:1.7;color:#e3dace}.case-feature .button{margin-top:12px}.case-evidence{padding:22px 0 8px;margin-top:24px;border-top:1px solid #6e5b40}.case-evidence strong{display:block;font:700 3rem/1.1 "Manrope",sans-serif;color:#ead2ad}.case-evidence strong span{display:block;margin-top:10px;font:400 15px/1.5 "DM Sans",sans-serif;color:#fffdf9}
+.operation{display:none}
+@media(max-width:980px){.method-film,.method-scale{grid-template-columns:1fr;gap:24px}.chapter-visual{aspect-ratio:3/4}.method-chapter{gap:28px}.case-feature{grid-template-columns:1fr 1.2fr}}
+@media(max-width:640px){.method-story{padding:64px 0}.method-intro h2{font-size:clamp(2.3rem,10vw,3rem);line-height:1.09}.method-intro>p:not(.section-label){font-size:16px;margin-top:22px}.method-route{grid-template-columns:1fr;gap:0;margin-top:30px}.method-route a{min-height:52px;padding:15px 0}.method-chapter{grid-template-columns:1fr;padding:36px 0;gap:22px}.method-chapter:nth-of-type(3) .chapter-visual,.method-chapter:nth-of-type(3) .chapter-copy{grid-column:auto;grid-row:auto}.chapter-copy h3,.method-film h3,.method-scale h3,.case-feature h3{font-size:clamp(1.8rem,8vw,2.35rem)}.chapter-visual{aspect-ratio:4/3;border-radius:18px}.chapter-visual figcaption{padding:20px;gap:8px}.chapter-visual figcaption strong{font-size:1.35rem}.method-scale{padding:26px 22px;border-radius:18px}.method-film{padding:36px 0;gap:12px}.method-close{font-size:17px}.case-feature{grid-template-columns:1fr}.case-feature>img{height:230px;min-height:0}}
+
