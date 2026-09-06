@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 1370)
-Total output lines: 26
-
 /* Check-in Lotado: narrative method section and Velho Chico proof block. */
 .method-story{background:var(--paper)}
 .method-intro{max-width:850px}
@@ -18,7 +15,10 @@ Total output lines: 26
 .chapter-outcome{margin-top:28px!important;padding:20px 22px;border-left:3px solid #a27f4b;background:#e7dccb;color:#30261d!important;border-radius:0 14px 14px 0}
 .chapter-visual{position:relative;margin:0;aspect-ratio:4/5;overflow:hidden;border-radius:24px;background:#30261d;box-shadow:0 18px 44px rgba(45,30,17,.12)}
 .chapter-visual img{width:100%;height:100%;object-fit:cover}.chapter-visual:after{content:"";position:absolute;inset:25% 0 0;background:linear-gradient(transparent,rgba(12,11,9,.94));pointer-events:none}
-.c…370 tokens truncated…size:20px;line-height:1.6;color:#574b41}.method-close strong{color:#241c14}
+.chapter-visual figcaption{position:absolute;z-index:1;bottom:0;padding:30px;color:#fffdf9;display:grid;gap:13px}.chapter-visual figcaption span{color:#ead3b1;font-size:10px;letter-spacing:.12em;font-weight:700}.chapter-visual figcaption strong{font:600 clamp(1.45rem,2.3vw,2rem)/1.24 "Manrope",sans-serif;letter-spacing:-.025em}.chapter-visual figcaption small{font-size:12px;line-height:1.5;color:#e5dfd5}
+.method-film{display:grid;grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);align-items:center;gap:36px;padding:56px 0}.method-film p:not(.section-label){color:#574b41;font-size:16px;line-height:1.7}.method-player{min-width:0}.method-player iframe{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:18px;background:#0c0b09}.method-player>a{display:inline-block;padding:14px 0;text-decoration:underline;text-underline-offset:3px;font-size:12px}
+.method-scale{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:46px;padding:44px;border-radius:24px;background:#25211b;color:#fffdf9}.method-scale .section-label{color:#dec59f;font-size:10px;line-height:1.6}.method-scale h3{margin-bottom:0}.method-scale p:not(.section-label),.method-scale li{color:#e1d6c7;line-height:1.7;font-size:16px}.method-scale ul{padding-left:20px}.method-scale li+li{margin-top:8px}.method-scale .scale-note{border-top:1px solid #61513b;padding-top:20px;margin-bottom:0;font-size:14px}
+.method-close{margin:38px auto 0;max-width:740px;text-align:center;font-size:20px;line-height:1.6;color:#574b41}.method-close strong{color:#241c14}
 .case-feature{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);overflow:hidden;background:#25211b;color:#fffdf9;border-radius:24px;margin:26px 0 30px}.case-feature>img{width:100%;height:100%;min-height:400px;object-fit:cover}.case-feature>div{padding:clamp(24px,4vw,48px)}.case-feature .section-label{color:#dfc59e;font-size:10px;line-height:1.6}.case-feature p:not(.section-label){font-size:15px;line-height:1.7;color:#e3dace}.case-feature .button{margin-top:12px}.case-evidence{padding:22px 0 8px;margin-top:24px;border-top:1px solid #6e5b40}.case-evidence strong{display:block;font:700 3rem/1.1 "Manrope",sans-serif;color:#ead2ad}.case-evidence strong span{display:block;margin-top:10px;font:400 15px/1.5 "DM Sans",sans-serif;color:#fffdf9}
 .operation{display:none}
 @media(max-width:980px){.method-film,.method-scale{grid-template-columns:1fr;gap:24px}.chapter-visual{aspect-ratio:3/4}.method-chapter{gap:28px}.case-feature{grid-template-columns:1fr 1.2fr}}
